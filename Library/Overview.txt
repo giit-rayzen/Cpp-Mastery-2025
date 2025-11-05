@@ -1,0 +1,39 @@
+🧩 Library Management System – Core Design
+🔹 1. Class Hierarchy
+✅ Book (Abstract Base Class)
+Pure virtual methods: display(), saveToFile()
+
+Virtual destructor to ensure proper cleanup
+
+✅ PrintedBook and EBook (Derived Classes)
+Override display() and saveToFile()
+
+Add specific attributes (e.g., page count, file format)
+
+✅ Library Class
+Stores Book* pointers in a vector
+
+Supports adding books, displaying all, and saving to file
+
+🔹 2. Runtime Polymorphism
+Book* can point to PrintedBook or EBook
+
+Calls to display() and saveToFile() resolve dynamically
+
+🔹 3. File I/O
+Saves book data to "library.txt"
+
+Demonstrates serialization via overridden saveToFile()
+
+🔹 4. Virtual Destructor
+Ensures derived destructors are called when deleting Book*
+Features: Search,Save,Delete
+
+
+LibrarySystem/
+├── Book.h / Book.cpp
+├── PrintedBook.h / PrintedBook.cpp
+├── EBook.h / EBook.cpp
+├── Library.h / Library.cpp
+├── LibraryException.h
+├── main.cpp
