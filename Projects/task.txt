@@ -14,3 +14,19 @@ Is exception safe
 Does NOT leak memory
 
 This class should behave like a lightweight ownership-managing buffer, similar to how std::vector internally manages memory (without fancy features).
+
+🧠 PROJECT 2: MiniVector (Custom std::vector Implementation)
+📌 1️⃣ Problem Statement (Interview-ready)
+
+Implement a MiniVector class in C++ that behaves similarly to std::vector
+for a single type, focusing on:
+
+Dynamic memory management
+
+Reallocation strategy
+
+Copy & move semantics
+
+Exception safety
+
+Iterator-like access
